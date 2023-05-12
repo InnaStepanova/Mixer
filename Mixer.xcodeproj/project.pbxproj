@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		02D1317E2A0E2B4F0028822B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D1317D2A0E2B4F0028822B /* AppDelegate.swift */; };
 		02D131802A0E2B4F0028822B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D1317F2A0E2B4F0028822B /* SceneDelegate.swift */; };
-		02D131822A0E2B4F0028822B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D131812A0E2B4F0028822B /* ViewController.swift */; };
-		02D131852A0E2B4F0028822B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D131832A0E2B4F0028822B /* Main.storyboard */; };
 		02D131872A0E2B520028822B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02D131862A0E2B520028822B /* Assets.xcassets */; };
 		02D1318A2A0E2B520028822B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D131882A0E2B520028822B /* LaunchScreen.storyboard */; };
+		02D131922A0E30410028822B /* MixerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D131912A0E30410028822B /* MixerTableViewController.swift */; };
+		02D131942A0E3D520028822B /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D131932A0E3D520028822B /* Number.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02D1317A2A0E2B4F0028822B /* Mixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mixer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D1317D2A0E2B4F0028822B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02D1317F2A0E2B4F0028822B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		02D131812A0E2B4F0028822B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		02D131842A0E2B4F0028822B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02D131862A0E2B520028822B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02D131892A0E2B520028822B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02D1318B2A0E2B520028822B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02D131912A0E30410028822B /* MixerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerTableViewController.swift; sourceTree = "<group>"; };
+		02D131932A0E3D520028822B /* Number.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 			children = (
 				02D1317D2A0E2B4F0028822B /* AppDelegate.swift */,
 				02D1317F2A0E2B4F0028822B /* SceneDelegate.swift */,
-				02D131812A0E2B4F0028822B /* ViewController.swift */,
-				02D131832A0E2B4F0028822B /* Main.storyboard */,
+				02D131912A0E30410028822B /* MixerTableViewController.swift */,
+				02D131932A0E3D520028822B /* Number.swift */,
 				02D131862A0E2B520028822B /* Assets.xcassets */,
 				02D131882A0E2B520028822B /* LaunchScreen.storyboard */,
 				02D1318B2A0E2B520028822B /* Info.plist */,
@@ -127,7 +127,6 @@
 			files = (
 				02D1318A2A0E2B520028822B /* LaunchScreen.storyboard in Resources */,
 				02D131872A0E2B520028822B /* Assets.xcassets in Resources */,
-				02D131852A0E2B4F0028822B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02D131822A0E2B4F0028822B /* ViewController.swift in Sources */,
+				02D131942A0E3D520028822B /* Number.swift in Sources */,
+				02D131922A0E30410028822B /* MixerTableViewController.swift in Sources */,
 				02D1317E2A0E2B4F0028822B /* AppDelegate.swift in Sources */,
 				02D131802A0E2B4F0028822B /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		02D131832A0E2B4F0028822B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				02D131842A0E2B4F0028822B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		02D131882A0E2B520028822B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +283,6 @@
 				INFOPLIST_FILE = Mixer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +309,6 @@
 				INFOPLIST_FILE = Mixer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

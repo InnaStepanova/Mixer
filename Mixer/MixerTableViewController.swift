@@ -15,14 +15,14 @@ class MixerTableViewController: UITableViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         title = "Mixer-Table"
-        tableView.register(MixedTableViewCell.self, forCellReuseIdentifier: cellID)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Shuffle", style: .plain, target: self, action: #selector(shuffleButtonPressed))
     }
     
     @objc private func shuffleButtonPressed() {
         for i in 0...data.count - 1 {
             let randomIndex = Int.random(in: 0...data.count - 1)
-            var number = data[i]
+            let number = data[i]
             data.remove(at: i)
             data.insert(number, at: randomIndex)
             let indexPath = IndexPath(row: i, section: 0)
@@ -39,11 +39,13 @@ class MixerTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! MixedTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
         let number = data[indexPath.row]
         cell.textLabel?.text = "\(number.number)"
         if number.isCheck {
             cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
         }
         
 
